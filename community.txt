@@ -5,3 +5,6 @@ employee
 user
 username password
 thank you
+email
+login
+
