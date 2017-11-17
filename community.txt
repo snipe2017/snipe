@@ -5,3 +5,5 @@ employee
 user
 username password
 thank you
+hi 
+hello
