@@ -5,4 +5,7 @@ employee
 user
 username password
 thank you
+hi 
+hello
+done my changes
 final copy
