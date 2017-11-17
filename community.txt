@@ -3,4 +3,5 @@ welcome snipe community
 admin 
 employee
 user
+username password
 
