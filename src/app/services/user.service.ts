@@ -23,15 +23,22 @@ export class UserService {
    var body = JSON.stringify(data);
    var headers = new Headers();
    headers.append('Content-Type', 'application/json');
-   return this.http.post('http://192.168.1.144:8089/DemoAPI/rest/registerUser', body,
+   return this.http.post('http://192.168.1.101:8081/DemoAPI/rest/registerUser', body,
     { headers: headers }).map((data: Response) => data.json());
 }
 login(data) {
   console.log(data);
-  return this.http.post('http://localhost:8081/DemoAPI/rest/loginUser', data
+  return this.http.post('http://192.168.1.101:8081/DemoAPI/rest/loginUser', data
     ).map(res => res.json());
 }
-//   signUpUser(form) {
+
+headerUser(data) {
+  console.log(data);
+  return this.http.post('http://192.168.1.101:8081/DemoAPI/rest/askq', data
+    ).map(res => res.json());
+}
+
+ // signUpUser(form) {
 // return this.http.post('http://localhost:8081/DemoAPI/rest/registerUser', {form}).map(res => res.json())
 //   }
 
